@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout_1</title>
+    <style>
+        @media screen and (max-width: 1600px) {
+            .Navigation{
+            background-color: yellow;
+            width: 100%;
+            height: 70px;
+            font-size: x-large;
+            padding-left: 10px;
+        }
+        .left-box{
+            background-color: red;
+            width: 47%;
+            height: 450px;
+            padding-left: 10px;
+        }
+        .right-box{
+            background-color: rgb(57, 221, 57);
+            width: 47%;
+            padding-left: 10px;
+            margin-right: -8px;
+        }
+        .left-right-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+
+        }
+        .container{
+            padding: 20px;
+            background-color: white;
+        }
+        .outer-container{
+            background-color: black;
+            padding: 40px 100px;
+        }            
+        }
+        @media screen and ( max-width: 700px) {
+                        .Navigation{
+                            background-color: yellow;
+                            width: 100%;
+                            height: 70px;
+                            font-size: x-large;
+                            padding-left: 10px;
+                        }
+                        .left-box{
+                            background-color: red;
+                            width: 100%;
+                            height: 200px;
+                            padding-left: 10px;
+                        }
+                        .right-box{
+                            background-color: rgb(57, 221, 57);
+                            width: 100%;
+                            height: 200px;
+                            padding-left: 10px;
+                        }
+                        .container{
+                            padding: 20px;
+                        }
+                        .left-right-box{
+                            display: block;
+                        }
+                        .outer-container{
+                            background-color: black;
+                            padding: 50px;
+                        }
+        }
+
+    </style>
+</head>
+<body>
+  <div class="outer-container">
+    <div class="container">
+        <div class="Navigation">
+            <h1>Navigation</h1>
+        </div>
+      <div class="left-right-box">
+        <div class="left-box">
+            <h2>LEFT BOX</h2>
+        </div>
+        <div class="right-box">
+            <h2>RIGHT BOX</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
